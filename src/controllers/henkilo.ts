@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { result } from "lodash";
 import mongoose from "mongoose";
 import { resourceLimits } from "worker_threads";
+import henkiloModel from "../models/henkilo.model";
 import Henkilo from '../models/henkilo.model'
 
 
@@ -75,18 +76,17 @@ const deleteHenkilo = (req: Request, res: Response) => {
 };
 
 const updateHenkilo = (req: Request, res: Response) => {
-    Henkilo.findByIdAndUpdate(req.params.id)
+    let {etunimi, sukunimi, ika} = req.body;
+    Henkilo.findByIdAndUpdate(req.params.id,req.body)
     .exec()
-    .then((result) => {
+    .then(result => {
         return res.status(200).json({
-            henkilo : result
+            henkilo: result
         });
     })
-    .catch((error) => {
-        return res.status(500).json({
-            message: error.message,
-            error
-        });
+    .catch(error => {
+        message: error.message,
+        error
     })
 };
 

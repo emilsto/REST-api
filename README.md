@@ -10,7 +10,7 @@ Toteutetut tehtävät:
 - [x] Henkilön poistaminen
 - [x] Henkilöiden haku
 - [x] Yksittäisen henkilön haku
-- [ ] Henkilön tietojen muokkaaminen
+- [x] Henkilön tietojen muokkaaminen
 - [x] Tietokantana käytössä @mongoDB atlas
 
 
