@@ -24,8 +24,8 @@ Toteutetut tehtävät:
     "ika": 73
     }
     ```
-    ![kuva luonnista](https://ibb.co/HzkCBCR)
-    
+    ![kuva luonnista](https://i.ibb.co/pz9QbQN/henkilon-lisaaminen.png)
+
  - localhost:5000/api/henkilot/delete/:id
     - poistaa yksittäisen henkilön id:n mukaan
 - localhost:5000/api/henkilot/get
