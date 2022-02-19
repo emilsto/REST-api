@@ -1,4 +1,4 @@
-KESÄTÖIDEN SOVELLUSKEHITYS TEHTÄVÄT
+<h1>KESÄTÖIDEN SOVELLUSKEHITYS TEHTÄVÄT</h1>
 
 Toteutettu node.js & TypeScript REST-rajapinta
 
@@ -12,5 +12,12 @@ Toteutetut tehtävät:
 - [x] Yksittäisen henkilön haku
 - [x] Henkilön tietojen muokkaaminen
 - [x] Tietokantana käytössä @mongoDB atlas
+
+<h3>Käyttö Postmanilla:</h3>
+
+- /api/henkilot/get
+    - noutaa kaikki henkilot tietokannasta
+
+
 
 
