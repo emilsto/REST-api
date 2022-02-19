@@ -14,8 +14,9 @@ Toteutetut tehtävät:
 - [x] Tietokantana käytössä livenä @mongoDB atlas
 
 <h3>Käynnistys paikallisesti:</h3>
-```javascript
-    npm run serve
+
+```
+npm run serve
 ```
 
 <h3>Käyttö esim. Postmanilla:</h3>
