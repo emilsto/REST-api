@@ -24,6 +24,8 @@ Toteutetut tehtävät:
     "ika": 73
     }
     ```
+    ![kuva luonnista](https://ibb.co/HzkCBCR)
+    
  - localhost:5000/api/henkilot/delete/:id
     - poistaa yksittäisen henkilön id:n mukaan
 - localhost:5000/api/henkilot/get
@@ -31,7 +33,8 @@ Toteutetut tehtävät:
 - localhost:5000/api/henkilot/get/:id
     - hakee yksittäisen henkilön id:n mukaan
 - Tietokanta käytössä ja livenä https://cloud.mongodb.com/
-
+- localhost:5000/api/henkilot/update/:id
+    - päivittää yksittäisen käyttäjän tietoja id:n mukaan, json syntaksi samalla tavalla kuin yllä
 
 
 
