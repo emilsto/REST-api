@@ -75,7 +75,7 @@ const deleteHenkilo = (req: Request, res: Response) => {
 };
 
 const updateHenkilo = (req: Request, res: Response) => {
-    Henkilo.findById(req.params.id)
+    Henkilo.findByIdAndUpdate(req.params.id)
     .exec()
     .then((result) => {
         return res.status(200).json({

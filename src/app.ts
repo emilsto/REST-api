@@ -18,12 +18,12 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 
-//routes
+/* ROUTES */
 app.use("/api/henkilot", HenkiloRoute);
 
 
 
-//start app
+/* START APP */
 app.listen(port, async () => {
     console.log(`listening to port ${port}.`);
     await connect();
