@@ -13,6 +13,11 @@ Toteutetut tehtävät:
 - [x] Henkilön tietojen muokkaaminen
 - [x] Tietokantana käytössä livenä @mongoDB atlas
 
+<h3>Käynnistys paikallisesti:</h3>
+```
+    npm run serve
+```
+
 <h3>Käyttö esim. Postmanilla:</h3>
 
 - localhost:5000/api/henkilot/create
