@@ -11,12 +11,23 @@ Toteutetut tehtävät:
 - [x] Henkilöiden haku
 - [x] Yksittäisen henkilön haku
 - [x] Henkilön tietojen muokkaaminen
-- [x] Tietokantana käytössä @mongoDB atlas
+- [x] Tietokantana käytössä livenä @mongoDB atlas
 
-<h3>Käyttö Postmanilla:</h3>
+<h3>Käyttö esim. Postmanilla:</h3>
 
 - /api/henkilot/get
     - noutaa kaikki henkilot tietokannasta
+
+- /api/henkilot/create
+    - luo uuden henkilön, json syntaksi mallia:
+    ```json
+    {
+    "etunimi": "Lassi",
+    "sukunimi": "Kage",
+    "ika": 62
+    }
+    ```
+
 
 
 
