@@ -7,7 +7,11 @@ Käytetty Express -frameworkkia sekä mongoDB -tietokantaa
 Toteutetut tehtävät:
 
 - Henkilön lisääminen
+
 - Henkilön poistaminen
+
 - Henkilöiden haku
+
 - Yksittäisen henkilön haku
-- Tietokanta käytössä @mongoDB atlas
+
+- Tietokantana käytössä @mongoDB atlas
