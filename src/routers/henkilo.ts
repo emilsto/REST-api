@@ -1,0 +1,11 @@
+import express from "express";
+import controller from "../controllers/henkilo"
+
+const router = express.Router();
+
+router.get("/get", controller.getAllHenkilo);
+router.post("/create", controller.createHenkilo);
+router.get("/get/:id",controller.getHenkilo);
+router.delete("/delete/:id", controller.deleteHenkilo);
+
+export = router;

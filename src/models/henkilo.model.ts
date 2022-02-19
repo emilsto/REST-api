@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
-import config from "config";
+import { Schema } from "mongoose";
+import IHenkilo from "../interfaces/henkilo";
 
-const henkiloSchema = new mongoose.Schema({
+const henkiloSchema: Schema = new Schema({
     etunimi: {
         type: String,
         required: true
@@ -13,9 +14,8 @@ const henkiloSchema = new mongoose.Schema({
     ika: {
         type: Number,
         required: true
-    }
+    },
+    
 })
 
-const Henkilo = mongoose.model("Henkilo", henkiloSchema);
-
-export default Henkilo;
+export default mongoose.model<IHenkilo>("Henkilo", henkiloSchema);

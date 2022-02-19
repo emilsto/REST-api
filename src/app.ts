@@ -1,15 +1,30 @@
 import config from "config"
 import express from "express";
 import connect from "./utils/connect";
-import routes from "./routes";
+import HenkiloRoute from "./routers/henkilo";
+import router from "./routers/henkilo";
+import bodyParser from "body-parser";
 
 const port = config.get("port");
 const app = express();
+
+//parse request
+/*
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+*/
+
+//This seems to do the job of bodyparser
+app.use(express.json());
+
+
+//routes
+app.use("/api/henkilot", HenkiloRoute);
+
+
 
 //start app
 app.listen(port, async () => {
     console.log(`listening to port ${port}.`);
     await connect();
-
-    routes(app);
   });
