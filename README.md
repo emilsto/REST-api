@@ -19,10 +19,6 @@ Toteutetut tehtävät:
 npm run build
 ```
 
-<h3>Käynnistys paikallisesti:</h3>
-
-
-
 <h3>Käyttö esim. Postmanilla:</h3>
 
 - localhost:5000/api/henkilot/create
