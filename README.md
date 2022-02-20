@@ -1,4 +1,4 @@
-<h1>KESÄTÖIDEN SOVELLUSKEHITYSTEHTÄVÄT</h1>
+<h1>KESÄTÖIDEN SOVELLUSKEHITYS TEHTÄVÄT</h1>
 
 Toteutettu tehtävä 2.2 node.js & TypeScript REST-rajapinta
 
