@@ -16,7 +16,7 @@ Toteutetut tehtävät:
 <h3>Käynnistys paikallisesti:</h3>
 
 ```
-npm run serve
+npm run build
 ```
 
 <h3>Käynnistys paikallisesti:</h3>
