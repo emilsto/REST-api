@@ -1,8 +1,4 @@
-import { NextFunction, Request, Response } from "express";
-import { result } from "lodash";
-import mongoose from "mongoose";
-import { resourceLimits } from "worker_threads";
-import henkiloModel from "../models/henkilo.model";
+import {  Request, Response } from "express";
 import Henkilo from '../models/henkilo.model'
 
 //Controlles for post, put, get, delete methods
@@ -69,7 +65,8 @@ const deleteHenkilo = (req: Request, res: Response) => {
     .exec()
     .then((result) => {
         return res.status(202).json({
-            henkilo : result
+            message : "deleted person with id:" + req.params.id,
+            henkilo : result,
         });
     })
     .catch((error) => {
