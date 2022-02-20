@@ -5,8 +5,10 @@ import { resourceLimits } from "worker_threads";
 import henkiloModel from "../models/henkilo.model";
 import Henkilo from '../models/henkilo.model'
 
+//Controlles for post, put, get, delete methods
 
-const createHenkilo = (req: Request, res: Response, next: NextFunction) => {
+//post
+const createHenkilo = (req: Request, res: Response) => {
     let {etunimi, sukunimi, ika} = req.body;
     const henkilo = new Henkilo({
         etunimi,
@@ -26,6 +28,7 @@ const createHenkilo = (req: Request, res: Response, next: NextFunction) => {
     })
 };
 
+//get all
 const getAllHenkilo = (req: Request, res: Response) => {
     Henkilo.find()
             .exec()
@@ -43,6 +46,7 @@ const getAllHenkilo = (req: Request, res: Response) => {
             })
 };
 
+//get by id
 const getHenkilo = (req: Request, res: Response) => {
     Henkilo.findById(req.params.id)
     .exec()
@@ -59,6 +63,7 @@ const getHenkilo = (req: Request, res: Response) => {
     })
 };
 
+//delete by id
 const deleteHenkilo = (req: Request, res: Response) => {
     Henkilo.findByIdAndDelete(req.params.id)
     .exec()
@@ -75,6 +80,7 @@ const deleteHenkilo = (req: Request, res: Response) => {
     })
 };
 
+//put by id
 const updateHenkilo = (req: Request, res: Response) => {
     let {etunimi, sukunimi, ika} = req.body;
     Henkilo.findByIdAndUpdate(req.params.id,req.body)
@@ -85,11 +91,12 @@ const updateHenkilo = (req: Request, res: Response) => {
         });
     })
     .catch(error => {
-        message: error.message,
-        error
+        return res.status(204).json({
+            message: error.message,
+            error
+        })
     })
 };
-
 
 
 export default {getAllHenkilo, createHenkilo, getHenkilo, deleteHenkilo, updateHenkilo};

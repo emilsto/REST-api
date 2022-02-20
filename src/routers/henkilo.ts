@@ -3,6 +3,7 @@ import controller from "../controllers/henkilo"
 
 const router = express.Router();
 
+//routes for updating henkilo database
 router.get("/get", controller.getAllHenkilo);
 router.post("/create", controller.createHenkilo);
 router.get("/get/:id",controller.getHenkilo);

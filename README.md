@@ -1,4 +1,4 @@
-<h1>KESÄTÖIDEN SOVELLUSKEHITYS TEHTÄVÄT</h1>
+<h1>KESÄTÖIDEN SOVELLUSKEHITYSTEHTÄVÄT</h1>
 
 Toteutettu tehtävä 2.2 node.js & TypeScript REST-rajapinta
 
@@ -18,6 +18,10 @@ Toteutetut tehtävät:
 ```
 npm run serve
 ```
+
+<h3>Käynnistys paikallisesti:</h3>
+
+
 
 <h3>Käyttö esim. Postmanilla:</h3>
 
@@ -41,6 +45,3 @@ npm run serve
 - Tietokanta käytössä ja livenä https://cloud.mongodb.com/
 - localhost:5000/api/henkilot/update/:id
     - päivittää yksittäisen käyttäjän tietoja id:n mukaan, json syntaksi samalla tavalla kuin yllä
-
-
-
