@@ -1,4 +1,4 @@
-<h1>KESÄTÖIDEN SOVELLUSKEHITYSTEHTÄVÄT</h1>
+<h1>KESÄTÖIDEN SOVELLUSKEHITYS TEHTÄVÄT</h1>
 
 Toteutettu tehtävä 2.2 node.js & TypeScript REST-rajapinta
 
@@ -18,10 +18,6 @@ Toteutetut tehtävät:
 ```
 npm run build
 ```
-
-<h3>Käynnistys paikallisesti:</h3>
-
-
 
 <h3>Käyttö esim. Postmanilla:</h3>
 
